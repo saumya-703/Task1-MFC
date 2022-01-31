@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    background-color: #0E0E19;
+    background-image:url('images/Stars.png');
+    width: 100%;
+}
+.start{
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  padding-top:250px ;
+  color: #fff;
+}
+h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+  letter-spacing: 0.08rem;
+}
+.look{
+  letter-spacing: 0.02rem;
+  font-size: 20px;
+}
+.start img{
+  cursor: pointer;
+  width: 5%;
+}
+.projectc{
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  height: 100vh;
+}
+.container{
+  position: relative;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.back img{
+  padding-top: 50px;
+  cursor: pointer;
+  align-items: center;
+  width: 70%;
+}
+.container .card{
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background-color: rgba(128, 128, 128, 0.226);
+  margin: 30px 20px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+  transition: 0.3s ease-in-out;
+}
+.container .card:hover{
+  height: 420px;
+}
+.container .card .imgBx{
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.container .card .imgBx img{
+  max-width: 100%;
+  border-radius: 4px;
+  align-items: center;
+}
+.container .card .content{
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: aliceblue;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+.container .card .content h2{
+  font-weight: 900;
+  font-size: 20px;
+}
+.container .card .content p{
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.02rem;
+}
+.container .card:hover .content{
+  visibility: visible;
+  margin-top: -50px;
+  transition-delay: 0.3s;
+}
+@media only screen and (max-width:480px){
+  .projectc{
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    height: 300vh;
+  }
+  .start img{
+    cursor: pointer;
+    width: 15%;
+  }
+  h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    letter-spacing: 0.08rem;
+  }
+  .look{
+    letter-spacing: 0.02rem;
+    font-size: 15px;
+  }
+}
